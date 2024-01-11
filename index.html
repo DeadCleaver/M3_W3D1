@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT site prototype</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="img" src="./assets/logo.svg" alt="logo"></a>
+
+                <!-- navbar toggler and icon -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- navbar menu -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Browse</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Also another action</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Landing</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Also another action</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Also another action</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Accounts
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Also another action</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- user section -->
+                <div class="d-flex">
+
+                    <div class="position-relative">
+                        <ion-icon class="p-3 border-1 bg-secondary rounded-circle me-2 text-light"
+                            name="notifications-outline"></ion-icon>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </div>
+
+                    <div class="position-relative">
+                        <img id="st-avatar" src="./assets/avatar-5.jpg" alt="avatar image"
+                            class="img-responsive rounded-circle">
+                        <span
+                            class="position-absolute top-100 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </div>
+
+
+                    <!--                     <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle st-avatar-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img id="st-avatar" src="./assets/avatar-5.jpg" alt="avatar image" class="img-responsive rounded-circle">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          <li><a class="dropdown-item" href="#">Menu item</a></li>
+                        </ul>
+                      </div> -->
+
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- jumbotron -->
+
+        <div class="row align-items-center g-5 st-jumbo">
+            <div class="col-11 col-md-5 offset-1">
+                <div class="container text-light mb-3">
+                    <h1 class="fw-bold">Welcome Web Students!</h1>
+                    <p>Hand-picked Instructor and expertly crafted courses, designed for the modern students
+                        and entrepreneur.</p>
+                </div>
+                <div class="container">
+                    <button type="button" class="btn btn-success">Browse Courses</button>
+                    <button type="button" class="btn btn-light"> Are You Instructor?</button>
+                </div>
+            </div>
+            <div class="col-11 col-md-5">
+                <img src="./assets/hero-img.png" class="d-block mx-lg-auto img-fluid">
+            </div>
+        </div>
+
+        <!-- under-hero -->
+        <section class="bg-light">
+            <div class="row mx-5">
+
+                <div class="col-12 col-md-4 d-flex align-items-center py-3">
+                    <ion-icon class="p-3 bg-secondary rounded-circle me-1" name="videocam-outline"></ion-icon>
+                    <div class="container">
+                        <p class="fw-bold m-0">30,000 online courses</p>
+                        <p class="m-0">Enjoy a variety of fresh topics</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 d-flex align-items-center py-3">
+                    <ion-icon class="p-3 bg-secondary rounded-circle me-1" name="videocam-outline"></ion-icon>
+                    <div class="container">
+                        <p class="fw-bold m-0">30,000 online courses</p>
+                        <p class="m-0">Enjoy a variety of fresh topics</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 d-flex align-items-center py-3">
+                    <ion-icon class="p-3 bg-secondary rounded-circle me-1" name="videocam-outline"></ion-icon>
+                    <div class="container">
+                        <p class="fw-bold m-0">30,000 online courses</p>
+                        <p class="m-0">Enjoy a variety of fresh topics</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- card carousel 1 -->
+        <section class="container">
+            <h4 class="py-4">Recomended to you</h4>
+        </section>
+
+        <div class="container text-center my-3 my-carousel-box">
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-6 col-md-3">
+                                <div class="card mx-2">
+                                    <img src="./assets/course-graphql.jpg" class="card-img-top" alt="grapql">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                            of
+                                            the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-6 col-md-3">
+                                <div class="card mx-2">
+                                    <img src="./assets/course-javascript.jpg" class="card-img-top" alt="javascript">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                            the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-6 col-md-3">
+                                <div class="card mx-2">
+                                    <img src="./assets/course-node.jpg" class="card-img-top" alt="node">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                            the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-6 col-md-3">
+                                <div class="card mx-2">
+                                    <img src="./assets/course-laravel.jpg" class="card-img-top" alt="course-angular">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the
+                                            bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev" style="left: -8% !important;">
+                        <span><ion-icon class="my-arrow rounded-circle p-1" name="chevron-back-outline"></ion-icon></span>
+<!--                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+ -->                    
+                    </a>
+                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next" style="right: -8% !important;">
+                        <span><ion-icon class="my-arrow rounded-circle p-1" name="chevron-forward-outline"></ion-icon></span>
+<!--                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+ -->                    </a>
+                </div>
+            </div>
+        </div>
+      
+
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
